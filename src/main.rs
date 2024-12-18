@@ -88,7 +88,7 @@ fn main() {
         Commands::Remove { id } => {
             tasks.retain(|task| task.id != id);
             save_tasks(&tasks);
-            println!("Задача удалена!");
+            println!("Задача удалена");
         }
     }
 }
